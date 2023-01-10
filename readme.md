@@ -1,1 +1,1 @@
-Basketball points and fauls counter with timer - vanila JS + Tailwind css
+Password generator - vanila JS + Tailwind css
