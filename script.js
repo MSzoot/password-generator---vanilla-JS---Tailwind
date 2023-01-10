@@ -54,11 +54,9 @@ const generate = ()=> {
     
 }
 
-generate();
-
 //copy content from password buttons
 
-const copyContent = async (passNo) => {
+const copyContent = (passNo) => {
 let text = passNo.textContent;
 navigator.clipboard.writeText(text);
 
