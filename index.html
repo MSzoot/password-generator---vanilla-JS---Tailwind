@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bg-slate-900 mt-36 mx-auto w-128 rounded-md">
+      <h1 class="text-white text-4xl px-8 pt-20">Generate a</h1>
+      <h1 class="text-green-600 text-4xl px-8">random password</h1>
+      <h1 class="text-gray-400 text-1xl px-8 mt-4">
+        Never use a insecure password again.
+      </h1>
+      <button
+        class="bg-green-800 hover:bg-green-900 text-white mt-16 mb-4 mx-8 font-bold py-2 px-4 rounded"
+        onclick="generate()"
+      >
+        Genereate Password
+      </button>
+      <div class="flex gap-10 pb-5 ml-8">
+        <div>
+          <input
+            class="scale-150 mr-1"
+            type="checkbox"
+            id="specials"
+            name="specials"
+            checked
+          />
+          <label class="text-white" for="scales">Special characters</label>
+        </div>
+        <div>
+          <input
+            class="scale-150 mr-1"
+            type="checkbox"
+            id="numbers"
+            name="numbers"
+            checked
+          />
+          <label class="text-white" for="scales">Numbers</label>
+        </div>
+      </div>
+
+      <div class="mx-8 border-t-2 border-gray-800 mb-16"></div>
+      <!--border-->
+      <div class="flex justify-around pb-20 mx-8">
+        <button
+          class="bg-green-800 hover:bg-green-900 text-white font-bold py-2 px-4 rounded"
+          id="pass-one"
+          onclick="copyContent(passOne)"
+        ></button>
+        <button
+          class="bg-green-800 hover:bg-green-900 text-white font-bold py-2 px-4 rounded"
+          id="pass-two"
+          onclick="copyContent(passTwo)"
+        ></button>
+      </div>
+    </div>
+  </body>
+  <script src="/script.js"></script>
+</html>
