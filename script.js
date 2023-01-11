@@ -19,15 +19,21 @@ const specials = document.getElementById("specials");
 const numbers = document.getElementById("numbers");
 const passOne = document.getElementById("pass-one")
 const passTwo = document.getElementById("pass-two")
+const howMany = document.getElementById("how-many")
+
+
+
 
 
 // password generation function
 
-const makePass = (array) => {
-    for (let i = 0 ; i <16 ; i++){
+const makePass = (array,) => {
+   let charactersNumber = howMany.value
+
+    for (let i = 0 ; i < charactersNumber ; i++){
         passOne.textContent += array[ Math.floor(Math.random()* array.length)]
     }
-    for (let i = 0 ; i <16 ; i++){
+    for (let i = 0 ; i < charactersNumber ; i++){
         passTwo.textContent += array[ Math.floor(Math.random()* array.length)]
     }
 }
