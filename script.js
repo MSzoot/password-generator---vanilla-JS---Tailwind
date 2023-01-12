@@ -60,7 +60,7 @@ const generate = ()=> {
     
 }
 
-//copy content from password buttons
+//copy pass from password buttons
 
 const copyContent = (passNo) => {
 let text = passNo.textContent;
