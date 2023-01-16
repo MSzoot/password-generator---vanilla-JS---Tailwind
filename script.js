@@ -27,7 +27,7 @@ const howMany = document.getElementById("how-many")
 
 // password generation function
 
-const makePass = (array,) => {
+const makePass = (array) => {
    let charactersNumber = howMany.value
 
     for (let i = 0 ; i < charactersNumber ; i++){
