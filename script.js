@@ -68,3 +68,6 @@ navigator.clipboard.writeText(text);
 
 alert(`Password copied to clipboard!`);
 };
+
+
+/// think about new features
