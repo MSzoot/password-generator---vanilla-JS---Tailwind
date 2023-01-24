@@ -70,4 +70,3 @@ alert(`Password copied to clipboard!`);
 };
 
 
-/// think about new features
